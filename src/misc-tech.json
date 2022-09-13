@@ -1,0 +1,43 @@
+{
+    "resources": [
+      {
+        "title": "Klaviyo",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://studio-culture.com.au/wp-content/uploads/2020/10/klaviyo-logo.png"
+      },
+      {
+        "title": "Mailchimp",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://www.edigitalagency.com.au/wp-content/uploads/new-mailchimp-logo-vertical-black.png"
+      },
+      {
+        "title": "Zendesk",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Zendesk_logo.svg/2560px-Zendesk_logo.svg.png"
+      }
+      ,
+      {
+        "title": "Jira",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://aptgadget.com/wp-content/uploads/2018/10/jira-alternatives.png"
+      }
+      ,
+      {
+        "title": "BigCommerce",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://www.finaleinventory.com/wp-content/uploads/2019/04/BigCommerce.png"
+      }
+      ,
+      {
+        "title": "Shopify",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://logos-world.net/wp-content/uploads/2020/11/Shopify-Symbol.png"
+      }
+      ,
+      {
+        "title": "Bazaar Voice",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://assets.stickpng.com/images/6030f16fa5a87000040e2bb5.png"
+      }
+    ]
+  }

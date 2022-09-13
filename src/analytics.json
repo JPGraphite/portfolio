@@ -1,0 +1,19 @@
+{
+    "resources": [
+      {
+        "title": "Google Analytics",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Logo_Google_Analytics.svg/1200px-Logo_Google_Analytics.svg.png"
+      },
+      {
+        "title": "GA4",
+        "link": "https://twitter.com/kendalmintcode",
+        "imageUrl": "https://e-cens.com/wp-content/uploads/elementor/thumbs/google-analytics-4-logo_e-cens_training-plbnccd0v68xj6ik0bgtfuqzaoaht6yd5wtbwuengk.png"
+      },
+      {
+        "title": "Google Tag Manager",
+        "link": "https://ark-labs.co.uk",
+        "imageUrl": "https://seeklogo.com/images/G/google-tag-manager-logo-0A964D3D77-seeklogo.com.png"
+      }
+    ]
+  }
