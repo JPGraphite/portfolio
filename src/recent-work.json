@@ -1,0 +1,55 @@
+{
+  "resources": [
+    {
+      "title": "Reebok",
+      "link": "https://reebok.com.au/",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-27joa6hsn8/stencil/21807160-17a4-013b-6633-7a687a60f4d6/img/icon-reebok-logo-white.svg"
+    },
+    {
+      "title": "Elka Collective",
+      "link": "https://elkacollective.com/",
+      "imageUrl": "https://store-j8vk2pc0r0.mybigcommerce.com/content/assets/EC-Logo-White.svg"
+    },
+    {
+      "title": "Shoes & Sox",
+      "link": "https://shoesandsox.com.au/",
+      "imageUrl": "https://store-kxbnxul8gb.mybigcommerce.com/content/assets/SHOES%26SOX_LOGO.svg"
+    }
+    ,
+    {
+      "title": "Superdry",
+      "link": "https://superdry.com.au/",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-86auyhdt5q/images/stencil/original/sd-logo_1624922003__57384.original.png"
+    }
+    ,
+    {
+      "title": "Shoe Warehouse",
+      "link": "https://shoewarehouse.com.au/",
+      "imageUrl": "https://store-z9x4z1a17g.mybigcommerce.com/content/assets/SHOEWAREHOUSE_SECONDARY_LOGO.svg"
+    }
+    ,
+    {
+      "title": "Volley",
+      "link": "https://volley.com.au/",
+      "imageUrl": "https://store-kqnpymww7.mybigcommerce.com/content/assets/VOLLEY_LOGO.svg"
+    }
+    ,
+    {
+      "title": "Clarks",
+      "link": "https://clarks.com.au/",
+      "imageUrl": "https://store-4444dw8mjs.mybigcommerce.com/content/assets/CLARKS_LOGO.svg"
+    }
+    ,
+    {
+      "title": "Hush Puppies",
+      "link": "https://hushpuppies.com.au/",
+      "imageUrl": "https://store-ge3vym6ysh.mybigcommerce.com/content/assets/HUSHPUPPIES_LOGO.svg"
+    }
+    ,
+    {
+      "title": "Julius Marlow",
+      "link": "https://juliusmarlow.com.au/",
+      "imageUrl": "https://store-w9ndtozuw7.mybigcommerce.com/content/assets/JULIUSMARLOW_LOGO.svg"
+    }
+  ]
+}

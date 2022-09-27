@@ -122,7 +122,7 @@ const Carousel = ({data, title}) => {
                 </a>
                 <a
                   href={resource.link}
-                  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-100 bg-slate-800/75 z-10"
+                  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity rounded-xl duration-300 opacity-0 hover:opacity-100 bg-slate-800/75 z-10"
                 >
                   <h3 className="text-white py-6 px-3 mx-auto text-xl">
                     {resource.title}
