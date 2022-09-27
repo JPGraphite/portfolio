@@ -1,7 +1,7 @@
 const Grid = ({data}) => {
     const values = data;
     return (
-        <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-10 align-middle justify-center">
+        <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-10 align-middle justify-items-center items-center">
             {values.resources.map((resource, index) => {
             return (
               <li
@@ -25,7 +25,7 @@ const Grid = ({data}) => {
                     <div className="absolute bottom-10 text-center w-full left-0 flex justify-center">
                         <a href={resource.link} target="_blank" rel="noreferrer" className="border-white border-2 rounded-full px-4 py-2 text-white hover:border-blue-400 hover:text-blue-400 transition-colors duration-300">VISIT SITE</a>
                     </div>
-                  <h3 className="text-white py-6 px-3 mt-10 mx-auto text-xl">
+                  <h3 className="text-white py-6 px-3 mt-2 md:mt-10 mx-auto text-xl">
                     {resource.title}
                   </h3>
                 </div>
