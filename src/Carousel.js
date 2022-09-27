@@ -107,7 +107,7 @@ const Carousel = ({data, title}) => {
             return (
               <div
                 key={index}
-                className="carousel-item bg-slate-200 outline outline-offset-2 outline-4 outline-blue-600 rounded-xl text-center relative w-64 h-64 snap-star"
+                className="carousel-item bg-slate-200 outline outline-offset-2 outline-4 outline-blue-600 rounded-xl text-center relative h-40 w-40 md:w-64 md:h-64 snap-star"
               >
                 <a
                   href={resource.link}

@@ -1,12 +1,12 @@
 const Grid = ({data}) => {
     const values = data;
     return (
-        <ul className="grid grid-cols-4 gap-10">
+        <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-10 align-middle justify-center">
             {values.resources.map((resource, index) => {
             return (
               <li
                 key={index}
-                className="bg-slate-200 outline outline-offset-2 outline-4 outline-blue-600 rounded-xl text-center relative w-64 h-64"
+                className="bg-slate-200 outline outline-offset-2 outline-4 outline-blue-600 rounded-xl text-center relative w-40 h-40 md:w-64 md:h-64"
               >
                 <a
                   href={resource.link}

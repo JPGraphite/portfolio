@@ -24,7 +24,7 @@ function LandingPage() {
                     style={{
                         backgroundImage: "url('https://images.unsplash.com/photo-1506775352297-a5fa9c136675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80')"
                         }}>
-                    <div className="w-full h-full mx-20">
+                    <div className="w-full h-full sm:mx-20">
                         <h1 className="text-white text-5xl font-semibold mt-20 mb-10 w-fit px-4 py-4 text-start bg-slate-500/90">
                         <TypeAnimation
                             sequence={[
@@ -40,7 +40,7 @@ function LandingPage() {
                             style={{ fontSize: '1em' }}
                             />
                         </h1>
-                        <div className="w-2/3 text-4xl font-bold text-slate-100 px-10 my-12 py-10 bg-blue-600/80 text-left">
+                        <div className="w-full md:w-2/3 text-4xl font-bold text-slate-100 px-10 my-12 py-10 bg-blue-600/80 text-left">
                         <h2>I'm a <span className="text-black">Full-Stack Developer</span></h2>
                         <p className="text-3xl font-bold">Based in Geelong, Victora</p>
                         </div>
@@ -53,14 +53,14 @@ function LandingPage() {
                 <section
                     id="about"
                     className="flex items-center justify-start  font-sans  mx-auto w-full py-20 bg-slate-800">
-                    <div className="w-full flex mx-20">
-                        <div className="px-6 py-10 bg-slate-600 w-2/3">
+                    <div className="w-full flex-wrap flex sm:mx-20">
+                        <div className="px-6 py-10 bg-slate-600 w-full md:w-2/3">
                             <div
                                 className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                                 <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
                                     About
 
-                                    <span className="text-5xl text-blue-500 leading-relaxeds"
+                                    <span className="text-3xl lg:text-5xl text-blue-500 leading-relaxeds"
                                         > Me
                                     </span>
                                 </h2>
@@ -74,7 +74,7 @@ function LandingPage() {
                             </div>
                         </div>
                         {/* About me Logo */}
-                        <div className="px-3 w-1/3">
+                        <div className="px-3 py-10 md:py-0 w-full md:w-1/3">
                             
                             <div className="flex justify-center items-center">
                                 <svg
@@ -237,7 +237,7 @@ function LandingPage() {
                 {/* Recent Work */}
                 <section
                     id="recent-work"
-                    className="flex flex-wrap items-center -mx-3 py-6 font-sans  mx-auto w-full px-20 pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 py-6 font-sans  mx-auto w-full px-6 sm:px-20 pb-20 bg-slate-800" 
                     >
                     <h2 className="text-4xl leading-8 font-semibold mb-8 text-white text-start uppercase font-bold">
                         Previous Work
@@ -258,7 +258,7 @@ function LandingPage() {
                 {/* Front End Carousel */}
                 <section
                     id="front-end"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full px-20 pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
                     >
                     <div className="px-3 w-full">
                         <Carousel data={feData} title="Front end Tech" />
@@ -277,7 +277,7 @@ function LandingPage() {
                 {/* Back End tech */}
                 <section
                     id="back-end"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full px-20 pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
                     >
                     <div className="px-3 w-full">
                         <Carousel data={beData} title="Back end Tech" />
@@ -295,7 +295,7 @@ function LandingPage() {
                 {/* Analytics */}
                 <section
                     id="analytics"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full px-20 pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
                     >
                     <div className="px-3 w-full">
                         <Carousel data={analData} title="Analytics" />
@@ -313,7 +313,7 @@ function LandingPage() {
                 {/* Miscellaneous */}
                 <section
                     id="misc"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full px-20 pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
                     >
                     <div className="px-3 w-full">
                         <Carousel data={miscData} title="Other Tech" />
@@ -322,10 +322,10 @@ function LandingPage() {
                 {/* End Miscellaneous */}
                 {/* Info Section */}
                 <section
-                    id="about"
+                    id="contact"
                     className="flex items-center justify-start  font-sans  mx-auto w-full py-20 bg-slate-800">
-                    <div className="w-full flex mx-20">
-                        <div className="px-6 py-10 bg-slate-600 w-2/3">
+                    <div className="w-full flex flex-wrap md:mx-20">
+                        <div className="px-6 py-10 bg-slate-600 w-full md:w-2/3">
                             <div
                                 className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
                                 <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
@@ -345,7 +345,7 @@ function LandingPage() {
                             </div>
                         </div>
                         {/* About me Logo */}
-                        <div className="px-3 w-1/3">
+                        <div className="px-3 w-full md:w-1/3 py-6">
                             
                             <div className="flex justify-center items-center">
                                 <svg
