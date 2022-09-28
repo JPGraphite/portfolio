@@ -148,12 +148,12 @@ function LandingPage() {
 
                                 <form className="p-4 flex flex-col gap-2">
                                     <label className="text-blue-600 text-left text-2xl font-bold pt-2" htmlFor="name">First name:</label>
-                                    <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="text" id="name" name="name"></input>
+                                    <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2 p-2 text-white text-2xl" type="text" id="name" name="name"></input>
                                     <label className="text-blue-600 text-left text-2xl font-bold pt-2" htmlFor="email">Email:</label>
-                                    <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="email" id="email" name="email"></input>
+                                    <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2 p-2 text-white text-2xl" type="email" id="email" name="email"></input>
                                     <label className="text-blue-600 text-left text-2xl font-bold pt-2" htmlFor="message">Message:</label>
-                                    <textarea className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2 h-64" type="textarea" id="message" name="message"></textarea>
-                                    <button className="bg-blue-600 p-2 mt-4 mb-0" type="submit">Submit</button>
+                                    <textarea className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2 h-64 p-2 text-white text-2xl" type="textarea" id="message" name="message"></textarea>
+                                    <button className="bg-blue-800/80 hover:bg-blue-700 p-4 mt-4 mb-0 text-2xl text-white font-bold hover:outline-4 outline-offset-4 hover:outline-white hover:outline" type="submit">Submit</button>
                                 </form>
                             </div>
                         </div>
