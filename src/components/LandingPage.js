@@ -56,8 +56,8 @@ function LandingPage() {
                 {/* Info Section */}
                 <section
                     id="about"
-                    className="flex items-center justify-start  font-sans  mx-auto w-full py-20 from-purple-800 to-slate-800 bg-gradient-to-bl">
-                    <div className="w-full flex-wrap flex sm:mx-20">
+                    className="flex items-center justify-start  font-sans  mx-auto w-full pb-20 lg:py-20 from-purple-800 to-slate-800 bg-gradient-to-bl">
+                    <div className="w-full flex-wrap flex lg:ml-20">
                         <div className="px-6 py-10 bg-gradient-to-b from-purple-700  w-full lg:w-2/3">
                             <div
                                 className="mx-auto mb-8 px-10 text-center lg:mx-0 lg:text-left">
