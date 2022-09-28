@@ -54,7 +54,7 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
         </Accordion>
         {/* Parallax Background  */}
         <section
-            className="flex flex-col  h-[10px] bg-cover bg-fixed bg-center justify-center items-center w-[100vw] -mx-10"
+            className="flex flex-col  h-[10px] bg-cover bg-fixed bg-center justify-center items-center w-[110vw] -mx-10"
             style={{
                 backgroundImage: "url('https://images.unsplash.com/photo-1626204327506-0d3ee11d7752?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')"
                 }}>
@@ -78,7 +78,7 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
         </Accordion>
         {/* Parallax Background  */}
         <section
-            className="flex flex-col h-[10px] bg-cover bg-fixed bg-center justify-center items-center w-[100vw] -mx-10"
+            className="flex flex-col h-[10px] bg-cover bg-fixed bg-center justify-center items-center w-[110vw] -mx-10"
             style={{
                 backgroundImage: "url('https://images.unsplash.com/photo-1580566176138-daa588058b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')"
                 }}>
@@ -100,7 +100,7 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
         </Accordion>
         {/* Parallax Background  */}
         <section
-            className="flex flex-col h-[10px] bg-cover bg-fixed bg-center justify-center items-center w-[100vw] -mx-10"
+            className="flex flex-col h-[10px] bg-cover bg-fixed bg-center justify-center items-center w-[110vw] -mx-10"
             style={{
                 backgroundImage: "url('https://images.unsplash.com/photo-1626204327506-0d3ee11d7752?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')"
                 }}>
