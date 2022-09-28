@@ -63,17 +63,13 @@ function LandingPage() {
                                 className="mx-auto mb-8 px-10 text-center lg:mx-0 lg:text-left">
                                     <div className=" w-fit h-[70px]">
                                         <div className="">
-                                            <h2 className="neon py-2 text-xl text-left lg:text-5xl">
-                                                About
-
-                                                <span className="neon text-xl lg:text-5xl leading-relaxeds"
-                                                    > Me
-                                                </span>
+                                            <h2 className="neon lg:py-2 text-3xl text-left lg:text-5xl">
+                                                About Me
                                             </h2>
                                         </div>
                                     </div>
                                 <p
-                                    className="visible text-xl mx-0 mt-10 mb-0 leading-relaxed text-left text-slate-300">
+                                    className="visible text-xl mx-0 lg:mt-10 mb-0 leading-relaxed text-left text-slate-200">
                                     I've been working as a Full-stack developer since 2019, starting my Journey rebuilding
                                      Graphite Online from the ground up with a small team.
                                     For the past 12 months I've been working at Brand Collective updating,
