@@ -117,7 +117,7 @@ export default function Header ( { setOpenMenu }) {
                                     className="flex text-blue-100 hover:text-blue-500 cursor-pointer transition-colors duration-300 font-semibold whitespace-nowrap"
                                     onClick={() => { setOpenMenu(4) }}
                                     >
-                                        Miscellaneous
+                                        Other Stuff
                                     </Link>
                                 </li>
                                 <li>

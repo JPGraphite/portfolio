@@ -28,7 +28,7 @@ function LandingPage() {
                         backgroundImage: "url('https://images.unsplash.com/photo-1506775352297-a5fa9c136675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80')"
                         }}>
                     <div className="w-full h-full sm:mx-20">
-                        <h1 className="text-white text-5xl font-semibold mt-20 mb-10 w-fit px-4 py-4 text-start bg-slate-500/90">
+                        <h1 className="text-white text-5xl font-semibold mt-20 mb-10 w-fit px-4 py-4 text-start bg-gradient-to-l from-purple-900 to-slate-800">
                         <TypeAnimation
                             sequence={[
                                 'Hi', // Types 'One'
@@ -43,7 +43,7 @@ function LandingPage() {
                             style={{ fontSize: '1em' }}
                             />
                         </h1>
-                        <div className="w-full md:w-2/3 text-4xl font-bold text-slate-100 px-10 my-12 py-10 bg-blue-600/80 text-left">
+                        <div className="w-full md:w-2/3 text-4xl font-bold text-slate-100 px-10 my-12 py-10 bg-gradient-to-r from-blue-800   text-left">
                         <h2>I'm a <span className="text-black">Full-Stack Developer</span></h2>
                         <p className="text-3xl font-bold">Based in Geelong, Victora</p>
                         </div>
@@ -57,19 +57,22 @@ function LandingPage() {
                     id="about"
                     className="flex items-center justify-start  font-sans  mx-auto w-full py-20 from-purple-800 to-slate-800 bg-gradient-to-bl">
                     <div className="w-full flex-wrap flex sm:mx-20">
-                        <div className="px-6 py-10 bg-slate-600 w-full md:w-2/3">
+                        <div className="px-6 py-10 bg-gradient-to-b from-purple-700  w-full md:w-2/3">
                             <div
-                                className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
-                                <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl">
-                                    About
+                                className="mx-auto mb-8 px-10 text-center lg:mx-0 lg:text-left">
+                                    <div className="bg-gradient-to-r from-white bg-clip-text to-blue-400 w-fit h-[70px]">
+                                        <div className="">
+                                            <h2 className="text-transparent py-2 text-3xl font-bold text-left lg:text-5xl">
+                                                About
 
-                                    <span className="text-3xl lg:text-5xl text-blue-500 leading-relaxeds"
-                                        > Me
-                                    </span>
-                                </h2>
-
+                                                <span className="text-transparent text-3xl lg:text-5xl text-blue-500 leading-relaxeds"
+                                                    > Me
+                                                </span>
+                                            </h2>
+                                        </div>
+                                    </div>
                                 <p
-                                    className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-300">
+                                    className="visible text-xl mx-0 mt-10 mb-0 leading-relaxed text-left text-slate-300">
                                     I've been working as a Full-stack developer since 2019, starting my Journey rebuilding
                                      Graphite Online from the ground up with a small team.
                                     For the past 12 months I've been working at Brand Collective updating,
@@ -242,7 +245,7 @@ function LandingPage() {
                 {/* Recent Work */}
                 <section
                     id="recent-work"
-                    className="flex flex-wrap items-center -mx-3 py-6 font-sans  mx-auto w-full px-6 sm:px-20 pb-20 bg-gradient-to-br from-slate-800 via-slate-800 to-blue-800 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 py-10 font-sans  mx-auto w-full px-6 sm:px-20 pb-20 bg-gradient-to-br from-slate-800 via-slate-800 to-blue-800 bg-slate-800" 
                     >
                     <h2 className="text-4xl leading-8 font-semibold mb-8 text-transparent bg-gradient-to-tr from-blue-300 to-purple-500 bg-clip-text text-start uppercase font-bold">
                         Previous Work
@@ -276,9 +279,9 @@ function LandingPage() {
                 {/* Contact Section */}
                 <section
                     id="contact"
-                    className="pt-6 flex items-center justify-center  font-sans  mx-auto w-full pb-10 bg-gradient-to-bl from-slate-800 via-slate-800 to-orange-300 shadow-2xl">
+                    className="pt-6 flex items-center justify-center  font-sans  mx-auto w-full pb-10 bg-gradient-to-bl from-slate-800 via-slate-800 to-purple-300 shadow-2xl">
                     <div className="w-full flex flex-wrap md:mx-20 justify-center">
-                        <div className="px-6 py-10 from-slate-800 via-slate-800 to-orange-400 bg-gradient-to-tr w-full md:w-2/3 flex justify-center">
+                        <div className="px-6 py-10 from-slate-800 via-slate-800 to-purple-900 bg-gradient-to-tr w-full md:w-2/3 flex justify-center">
                             <div
                                 className="mx-auto mb-8 text-center lg:mx-0 w-4/5 lg:text-left">
                                 <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-blue-500">
