@@ -15,3 +15,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.neon {
+  animation: flicker 5.5s infinite alternate;
+  color: rgb(253, 253, 253);
+}
+
+.neon-noFlicker {
+  color: rgb(253, 253, 253);
+  text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(255, 0, 187),
+      0 0 80px rgb(242, 0, 255),
+      0 0 90px rgb(255, 0, 255),
+      0 0 100px rgb(0, 8, 255),
+      0 0 150px rgb(255, 0, 238);
+}
+
+.neon-blue {
+  color: rgb(253, 253, 253);
+  text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(0, 191, 255),
+      0 0 80px rgb(0, 179, 255),
+      0 0 90px rgb(34, 0, 255),
+      0 0 100px rgb(111, 0, 255),
+      0 0 150px rgb(123, 0, 255);
+}
+
+.neon-purple {
+  color: rgb(255, 255, 255);
+  text-shadow:
+      0 0 4px rgb(252, 251, 252),
+      0 0 11px rgb(249, 247, 248),
+      0 0 19px rgb(254, 236, 253),
+      0 0 40px rgb(135, 0, 150),
+      0 0 80px rgb(124, 0, 106),
+      0 0 90px rgb(109, 2, 98),
+      0 0 100px rgb(75, 6, 165),
+      0 0 150px rgb(71, 8, 137);
+}
+
+.neon-green {
+  color: rgb(255, 255, 255);
+  text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(0, 255, 251),
+      0 0 80px rgb(10, 255, 214),
+      0 0 90px rgb(0, 255, 68),
+      0 0 100px rgb(1, 184, 22),
+      0 0 150px rgb(8, 194, 30);
+}
+
+.neon-yellow {
+  color: rgb(255, 255, 255);
+  text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(208, 255, 0),
+      0 0 80px rgb(202, 255, 10),
+      0 0 90px rgb(229, 255, 0),
+      0 0 100px rgb(172, 184, 1),
+      0 0 150px rgb(169, 194, 8);
+}
+
+h1 {
+  font-size: 4.2rem;    
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(255, 0, 187),
+      0 0 80px rgb(242, 0, 255),
+      0 0 90px rgb(255, 0, 255),
+      0 0 100px rgb(0, 8, 255),
+      0 0 150px rgb(255, 0, 238);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}

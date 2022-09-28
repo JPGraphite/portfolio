@@ -23,9 +23,9 @@ function LandingPage() {
                 {/* Parallax Background  */}
                 <section
                     id="home"
-                    className="flex flex-wrap w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center"
+                    className="flex flex-wrap w-full h-[500px] bg-cover bg-fixed bg-repeat bg-top justify-center items-center"
                     style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1506775352297-a5fa9c136675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80')"
+                        backgroundImage: "url('https://i.imgur.com/DjYsp3D.jpg')"
                         }}>
                     <div className="w-full h-full sm:mx-20">
                         <h1 className="text-white text-5xl font-semibold mt-20 mb-10 w-fit px-4 py-4 text-start bg-gradient-to-l from-purple-900 to-slate-800">
@@ -60,12 +60,12 @@ function LandingPage() {
                         <div className="px-6 py-10 bg-gradient-to-b from-purple-700  w-full md:w-2/3">
                             <div
                                 className="mx-auto mb-8 px-10 text-center lg:mx-0 lg:text-left">
-                                    <div className="bg-gradient-to-r from-white bg-clip-text to-blue-400 w-fit h-[70px]">
+                                    <div className=" w-fit h-[70px]">
                                         <div className="">
-                                            <h2 className="text-transparent py-2 text-3xl font-bold text-left lg:text-5xl">
+                                            <h2 className="neon py-2 text-xl text-left lg:text-5xl">
                                                 About
 
-                                                <span className="text-transparent text-3xl lg:text-5xl text-blue-500 leading-relaxeds"
+                                                <span className="neon text-xl lg:text-5xl leading-relaxeds"
                                                     > Me
                                                 </span>
                                             </h2>
@@ -247,7 +247,7 @@ function LandingPage() {
                     id="recent-work"
                     className="flex flex-wrap items-center -mx-3 py-10 font-sans  mx-auto w-full px-6  pb-20 bg-gradient-to-br from-slate-800 via-slate-800 to-blue-800 bg-slate-800" 
                     >
-                    <h2 className="text-4xl leading-8 px-6 mb-8 text-transparent bg-gradient-to-tr from-blue-300 to-purple-500 bg-clip-text text-start uppercase font-bold">
+                    <h2 className="neon-noFlicker neon-blue text-4xl leading-8 px-6 mb-8  text-start uppercase">
                         Previous Work
                     </h2>
                     <div className=" w-full">
