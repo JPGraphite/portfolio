@@ -67,9 +67,11 @@ function LandingPage() {
 
                                 <p
                                     className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
-                                    I've been working as a Full-stack developer since 2019, starting my Journey rebuilding Graphite Online from the ground up with a small team.
-                                    For the past 12 months I've been working at Brand Collective, updating, maintaining and improving 9 separate Ecommerce websites.
-                                    I've also been involved in several projects at Brand Collective for the replatforming of some of our existing sites.
+                                    I've been working as a Full-stack developer since 2019, starting my Journey rebuilding
+                                     Graphite Online from the ground up with a small team.
+                                    For the past 12 months I've been working at Brand Collective updating,
+                                     maintaining and improving 9 separate Ecommerce websites.
+                                    as well as replatforming some of our existing sites.
                                 </p>
                             </div>
                         </div>
