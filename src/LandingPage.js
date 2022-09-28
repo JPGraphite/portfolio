@@ -284,22 +284,19 @@ function LandingPage() {
                         <div className="px-6 py-10 from-slate-800 via-slate-800 to-purple-900 bg-gradient-to-tr w-full md:w-2/3 flex justify-center">
                             <div
                                 className="mx-auto mb-8 text-center lg:mx-0 w-4/5 lg:text-left">
-                                <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-blue-500">
-                                    Contact
+                                <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-white">
+                                    Get in touch!
 
-                                    <span className="text-3xl lg:text-5xl text-black leading-relaxeds"
-                                        > Me
-                                    </span>
                                 </h2>
 
                                 <form className="p-4 flex flex-col gap-2">
-                                    <label className="text-blue-400 text-left" htmlFor="name">First name:</label>
+                                    <label className="text-blue-600 text-left" htmlFor="name">First name:</label>
                                     <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="text" id="name" name="name"></input>
-                                    <label className="text-blue-400 text-left" htmlFor="email">Email:</label>
+                                    <label className="text-blue-600 text-left" htmlFor="email">Email:</label>
                                     <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="email" id="email" name="email"></input>
-                                    <label className="text-blue-400 text-left" htmlFor="message">Message:</label>
+                                    <label className="text-blue-600 text-left" htmlFor="message">Message:</label>
                                     <textarea className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2 h-64" type="textarea" id="message" name="message"></textarea>
-                                    <button className="bg-blue-400 p-2 mt-4 mb-0" type="submit">Submit</button>
+                                    <button className="bg-blue-600 p-2 mt-4 mb-0" type="submit">Submit</button>
                                 </form>
                             </div>
                         </div>
