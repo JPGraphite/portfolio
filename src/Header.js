@@ -48,7 +48,7 @@ export default function Header ( { setOpenMenu }) {
                     <div className='z-20 bg-black  text-white rounded-full py-2 flex justify-between align-middle px-8'>
                         <h2 className='text-blue-100 font-semibold'>Menu</h2><span className='min-h-full flex items-center'><GiHamburgerMenu  /></span>
                     </div>
-                    <div className={`duration-300 transition transform origin-bottom absolute bottom-6 left-0 right-0 mx-auto w-full -z-10 ${open ? " scale-y-0" : "scale-y-100"}`}>
+                    <div className={`duration-300 transition transform origin-bottom absolute bottom-6 left-0 right-0 mx-auto w-full -z-10 ${open ? "scale-y-100" : "scale-y-0"}`}>
                         <div className='bg-black mx-auto w-[200px] rounded-t-2xl'>
                             <ul
                                 className="menu px-8 justify-items-start items-start  justify-start flex flex-col pt-2 w-full left-0 top-16px-10 py-3">
