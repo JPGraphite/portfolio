@@ -1,22 +1,25 @@
 import { Fragment } from "react";
-import Carousel from "./Carousel";
-// Data
-import feData from './front-end.json';
-import beData from './back-end.json';
-import analData from './analytics.json';
-import miscData from './misc-tech.json';
 import recentWorkData from './recent-work.json';
 import Header from "./Header";
 import Grid from "./Grid";
-
-
+import TechAccordion from "./TechAccordion";
+import { useState } from "react";
 import { TypeAnimation } from 'react-type-animation';
 
 function LandingPage() {
+    const [openMenu, setOpenMenu] = useState(1);
+    
+    const handleOpenMenu = (menu) => {
+            setTimeout(() => {
+                setOpenMenu(menu)
+
+            }, 200);
+    }
+
   return (
         <Fragment>
-            <main className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
-                <Header />
+            <main className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto overflow-hidden">
+                <Header setOpenMenu={handleOpenMenu} />
                 {/* Parallax Background  */}
                 <section
                     id="home"
@@ -66,7 +69,7 @@ function LandingPage() {
                                 </h2>
 
                                 <p
-                                    className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-400">
+                                    className="visible mx-0 mt-3 mb-0 text-sm leading-relaxed text-left text-slate-300">
                                     I've been working as a Full-stack developer since 2019, starting my Journey rebuilding
                                      Graphite Online from the ground up with a small team.
                                     For the past 12 months I've been working at Brand Collective updating,
@@ -257,93 +260,41 @@ function LandingPage() {
                         }}>
                 </section>
                 {/* End Parallax Background  */}
-                {/* Front End Carousel */}
-                <section
-                    id="front-end"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
-                    >
-                    <div className="px-3 w-full">
-                        <Carousel data={feData} title="Front end Tech" />
-                    </div>
+                {/* Tech Section */}
+                <section id="tech" className="mx-auto w-full bg-slate-800 px-6 ">
+                    <TechAccordion openMenu={openMenu} setOpenMenu={handleOpenMenu} />
                 </section>
-                {/* End Front End Carousel */}
-
+                {/* End Tech Section */}               
                 {/* Parallax Background  */}
                 <section
-                    className="flex flex-col w-full h-[10px] bg-cover bg-fixed bg-center flex justify-center items-center"
+                    className="flex flex-col h-[10px] bg-cover bg-fixed bg-center justify-center items-center w-[100vw] -mx-10"
                     style={{
                         backgroundImage: "url('https://images.unsplash.com/photo-1580566176138-daa588058b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')"
                         }}>
                 </section>
-                {/* End Parallax Background  */}
-                {/* Back End tech */}
-                <section
-                    id="back-end"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
-                    >
-                    <div className="px-3 w-full">
-                        <Carousel data={beData} title="Back end Tech" />
-                    </div>
-                </section>
-                {/* End Back end tech */}
-                {/* Parallax Background  */}
-                <section
-                    className="flex flex-col w-full h-[10px] bg-cover bg-fixed bg-center flex justify-center items-center"
-                    style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1626204327506-0d3ee11d7752?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')"
-                        }}>
-                </section>
-                {/* End Parallax Background  */}
-                {/* Analytics */}
-                <section
-                    id="analytics"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
-                    >
-                    <div className="px-3 w-full">
-                        <Carousel data={analData} title="Analytics" />
-                    </div>
-                </section>
-                {/* End Analytics */}
-                {/* Parallax Background  */}
-                <section
-                    className="flex flex-col w-full h-[10px] bg-cover bg-fixed bg-center flex justify-center items-center"
-                    style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1580566176138-daa588058b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')"
-                        }}>
-                </section>
-                {/* End Parallax Background  */}
-                {/* Miscellaneous */}
-                <section
-                    id="misc"
-                    className="flex flex-wrap items-center -mx-3 font-sans px-4 mx-auto w-full md:px-20 pb-20 bg-slate-800" 
-                    >
-                    <div className="px-3 w-full">
-                        <Carousel data={miscData} title="Other Tech" />
-                    </div>
-                </section>
-                {/* End Miscellaneous */}
-                {/* Info Section */}
+                {/* End Parallax Background  */}         
+                {/* Contact Section */}
                 <section
                     id="contact"
-                    className="flex items-center justify-start  font-sans  mx-auto w-full pb-10 bg-slate-800 shadow-2xl">
+                    className="pt-6 flex items-center justify-center  font-sans  mx-auto w-full pb-10 bg-slate-800 shadow-2xl">
                     <div className="w-full flex flex-wrap md:mx-20 justify-center">
-                        <div className="px-6 py-10 bg-slate-600 w-full  md:w-1/2 ">
+                        <div className="px-6 py-10 bg-slate-600 w-full md:w-2/3 flex justify-center">
                             <div
-                                className="mx-auto mb-8 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left">
+                                className="mx-auto mb-8 text-center lg:mx-0 w-4/5 lg:text-left">
                                 <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-blue-500">
                                     Contact
 
-                                    <span className="text-5xl text-black leading-relaxeds"
+                                    <span className="text-3xl lg:text-5xl text-black leading-relaxeds"
                                         > Me
                                     </span>
                                 </h2>
 
                                 <form className="p-4 flex flex-col gap-2">
-                                    <label className="text-blue-400 text-left" for="name">First name:</label>
+                                    <label className="text-blue-400 text-left" htmlFor="name">First name:</label>
                                     <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="text" id="name" name="name"></input>
-                                    <label className="text-blue-400 text-left" for="email">Email:</label>
+                                    <label className="text-blue-400 text-left" htmlFor="email">Email:</label>
                                     <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="email" id="email" name="email"></input>
-                                    <label className="text-blue-400 text-left" for="message">Message:</label>
+                                    <label className="text-blue-400 text-left" htmlFor="message">Message:</label>
                                     <textarea className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2 h-64" type="textarea" id="message" name="message"></textarea>
                                     <button className="bg-blue-400 p-2 mt-4 mb-0" type="submit">Submit</button>
                                 </form>
@@ -352,7 +303,7 @@ function LandingPage() {
                         
                     </div>
                 </section>
-                {/* End Info */}
+                {/* End Contact */}
             </main>
         </Fragment>
     );
