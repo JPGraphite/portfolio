@@ -40,7 +40,7 @@ function LandingPage() {
                             wrapper="div"
                             cursor={true}
                             repeat={0}
-                            style={{ fontSize: '1em' }}
+                            style={{ fontSize: '1em', whiteSpace: 'nowrap' }}
                             />
                         </h1>
                         <div className="w-full md:w-2/3 text-4xl font-bold text-slate-100 px-10 my-12 py-10 bg-gradient-to-r from-blue-800   text-left">
@@ -56,14 +56,14 @@ function LandingPage() {
                 {/* Info Section */}
                 <section
                     id="about"
-                    className="flex items-center justify-start  font-sans  mx-auto w-full pb-20 lg:py-20 from-purple-800 to-slate-800 bg-gradient-to-bl">
+                    className="flex items-center justify-start  font-sans  mx-auto w-full lg:pb-20 lg:py-20 from-purple-800 to-slate-800 bg-gradient-to-bl">
                     <div className="w-full flex-wrap flex lg:ml-20">
-                        <div className="px-6 py-10 bg-gradient-to-b from-purple-700  w-full lg:w-2/3">
+                        <div className="px-6 pt-10 bg-gradient-to-b from-purple-700  w-full lg:w-2/3">
                             <div
                                 className="mx-auto mb-8 px-10 text-center lg:mx-0 lg:text-left">
                                     <div className=" w-fit h-[70px]">
                                         <div className="">
-                                            <h2 className="neon lg:py-2 text-3xl text-left lg:text-5xl">
+                                            <h2 className="neon lg:py-2 text-4xl text-left lg:text-5xl">
                                                 About Me
                                             </h2>
                                         </div>
@@ -79,7 +79,7 @@ function LandingPage() {
                             </div>
                         </div>
                         {/* About me Logo */}
-                        <div className="px-3 py-10 md:py-0 w-full lg:w-1/3">
+                        <div className="lg:px-3 lg:py-10 md:py-0 w-full lg:w-1/3">
                             
                             <div className="flex justify-center items-center ml-4">
                                 <img width={400} src="https://i.imgur.com/rfotB5z.png"></img>
