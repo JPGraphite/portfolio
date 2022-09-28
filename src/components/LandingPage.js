@@ -139,9 +139,9 @@ function LandingPage() {
                 {/* Contact Section */}
                 <section
                     id="contact"
-                    className="pt-6 flex items-center justify-center  font-sans  mx-auto w-full pb-10 bg-gradient-to-bl from-slate-800 via-slate-800 to-purple-300 shadow-2xl">
-                    <div className="w-full flex flex-wrap md:mx-20 justify-center">
-                        <div className="px-6 py-10 from-slate-800 via-slate-800 to-purple-900 bg-gradient-to-tr w-full md:w-2/3 flex justify-center">
+                    className="lg:pt-6 flex items-center justify-center  font-sans  mx-auto w-full pb-10 bg-gradient-to-bl from-slate-800 via-slate-800 to-purple-300 shadow-2xl">
+                    <div className="w-full flex flex-wrap lg:mx-20 justify-center">
+                        <div className="py-6 md:px-6 md:py-10 from-slate-800 via-slate-800 to-purple-900 bg-gradient-to-tr w-full lg:w-2/3 flex justify-center">
                             <div
                                 className="mx-auto mb-8 text-center lg:mx-0 w-4/5 lg:text-left">
                                 <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-white">
