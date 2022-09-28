@@ -19,7 +19,7 @@
     {
       "title": "Superdry",
       "link": "https://superdry.com.au/",
-      "imageUrl": "https://cdn11.bigcommerce.com/s-86auyhdt5q/images/stencil/original/sd-logo_1624922003__57384.original.png"
+      "imageUrl": "https://i.imgur.com/vQAtuND.png"
     }
     ,
     {
@@ -51,5 +51,9 @@
       "link": "https://juliusmarlow.com.au/",
       "imageUrl": "https://store-w9ndtozuw7.mybigcommerce.com/content/assets/JULIUSMARLOW_LOGO.svg"
     }
-  ]
+    ,
+    {
+      "title": "Graphite Online",
+      "imageUrl": "https://i.imgur.com/j4eiZYg.png"
+    }]
 }

@@ -18,7 +18,7 @@ function LandingPage() {
 
   return (
         <Fragment>
-            <main className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto overflow-hidden">
+            <main className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto overflow-hidden ">
                 <Header setOpenMenu={handleOpenMenu} />
                 {/* Parallax Background  */}
                 <section
@@ -55,7 +55,7 @@ function LandingPage() {
                 {/* Info Section */}
                 <section
                     id="about"
-                    className="flex items-center justify-start  font-sans  mx-auto w-full py-20 bg-slate-800">
+                    className="flex items-center justify-start  font-sans  mx-auto w-full py-20 from-purple-800 to-slate-800 bg-gradient-to-bl">
                     <div className="w-full flex-wrap flex sm:mx-20">
                         <div className="px-6 py-10 bg-slate-600 w-full md:w-2/3">
                             <div
@@ -242,9 +242,9 @@ function LandingPage() {
                 {/* Recent Work */}
                 <section
                     id="recent-work"
-                    className="flex flex-wrap items-center -mx-3 py-6 font-sans  mx-auto w-full px-6 sm:px-20 pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 py-6 font-sans  mx-auto w-full px-6 sm:px-20 pb-20 bg-gradient-to-br from-slate-800 via-slate-800 to-blue-800 bg-slate-800" 
                     >
-                    <h2 className="text-4xl leading-8 font-semibold mb-8 text-white text-start uppercase font-bold">
+                    <h2 className="text-4xl leading-8 font-semibold mb-8 text-transparent bg-gradient-to-tr from-blue-300 to-purple-500 bg-clip-text text-start uppercase font-bold">
                         Previous Work
                     </h2>
                     <div className=" w-full">
@@ -261,7 +261,7 @@ function LandingPage() {
                 </section>
                 {/* End Parallax Background  */}
                 {/* Tech Section */}
-                <section id="tech" className="mx-auto w-full bg-slate-800 px-6 ">
+                <section id="tech" className="mx-auto w-full bg-gradient-to-br from-blue-800 via-slate-800 to-slate-800 px-6 ">
                     <TechAccordion openMenu={openMenu} setOpenMenu={handleOpenMenu} />
                 </section>
                 {/* End Tech Section */}               
@@ -276,9 +276,9 @@ function LandingPage() {
                 {/* Contact Section */}
                 <section
                     id="contact"
-                    className="pt-6 flex items-center justify-center  font-sans  mx-auto w-full pb-10 bg-slate-800 shadow-2xl">
+                    className="pt-6 flex items-center justify-center  font-sans  mx-auto w-full pb-10 bg-gradient-to-bl from-slate-800 via-slate-800 to-orange-300 shadow-2xl">
                     <div className="w-full flex flex-wrap md:mx-20 justify-center">
-                        <div className="px-6 py-10 bg-slate-600 w-full md:w-2/3 flex justify-center">
+                        <div className="px-6 py-10 from-slate-800 via-slate-800 to-orange-400 bg-gradient-to-tr w-full md:w-2/3 flex justify-center">
                             <div
                                 className="mx-auto mb-8 text-center lg:mx-0 w-4/5 lg:text-left">
                                 <h2 className="mb-4 text-3xl font-bold text-left lg:text-5xl text-blue-500">

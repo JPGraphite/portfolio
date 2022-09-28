@@ -10,13 +10,20 @@ import analData from './analytics.json'
 import miscData from './misc-tech.json'
 import Grid from "./Grid";
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { IconContext } from "react-icons";
+
+
 
  
-function Icon({ id, open }) {
+function Icon({ id, open, color }) {
     return (
-        <>
-            {id === open ? <FaChevronUp/> : <FaChevronDown />}
-        </>
+        <IconContext.Provider value={{ color: color}}>
+        <div>
+            {id === open ? <FaChevronUp /> : <FaChevronDown/>}
+        </div>
+        </IconContext.Provider>
+            
+
     );
   }
 
@@ -29,14 +36,14 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
  
   return (
     <Fragment>
-        <Accordion className="" id="front-end" open={openMenu === 1} icon={<Icon id={1} open={openMenu} /> }>
-            <AccordionHeader className=" text-white text-3xl shadow-xl flex justify-between" onClick={() => handleOpen(1)}>
-                Front end Tech <span></span>
+        <Accordion className="" id="front-end" open={openMenu === 1} icon={<Icon className="" id={1} open={openMenu} color={"blue"}/> }>
+            <AccordionHeader className="from-pink-500 to-blue-300 bg-gradient-to-tr bg-fixed  text-transparent bg-clip-text text-3xl flex justify-between font-bold" onClick={() => handleOpen(1)}>
+                Front end Tech
             </AccordionHeader>
             <AccordionBody className="overflow-x-visible">
             {/* Front End Carousel */}
             <section
-                    className="flex flex-wrap items-center font-sans mx-auto w-full pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center font-sans mx-auto w-full pb-20 " 
                     >
                     <div className=" w-full">
                         <Grid data={feData} title="Front end Tech" />
@@ -53,14 +60,14 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
                 }}>
         </section>
         {/* End Parallax Background  */}
-        <Accordion id="back-end" open={openMenu === 2} icon={<Icon id={2} open={openMenu} />} >
-            <AccordionHeader className=" text-white text-3xl shadow-xl" onClick={() => handleOpen(2)}>
+        <Accordion id="back-end" open={openMenu === 2} icon={<Icon id={2} open={openMenu} color={"hotpink"} />} >
+            <AccordionHeader className="from-green-500 to-blue-300 bg-gradient-to-tr bg-fixed  text-transparent bg-clip-text text-3xl font-bold" onClick={() => handleOpen(2)}>
             Back-End Tech
             </AccordionHeader>
             <AccordionBody>
             {/* Back End Carousel */}
             <section
-                    className="flex flex-wrap items-center font-sans mx-auto w-full  pb-20 bg-slate-800" 
+                    className="flex flex-wrap items-center font-sans mx-auto w-full  pb-20 " 
                     >
                     <div className=" w-full">
                         <Grid data={beData} title="Back end Tech" />
@@ -77,13 +84,13 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
                 }}>
         </section>
         {/* End Parallax Background  */}
-        <Accordion id="analytics" open={openMenu === 3} icon={<Icon id={3} open={openMenu} />}>
-            <AccordionHeader className=" text-white text-3xl shadow-xl" onClick={() => handleOpen(3)}>
+        <Accordion id="analytics" open={openMenu === 3} icon={<Icon id={3} open={openMenu} color={"green"} />}>
+            <AccordionHeader className="from-orange-500 to-green-200 bg-gradient-to-tr bg-fixed  text-transparent bg-clip-text text-3xl font-bold" onClick={() => handleOpen(3)}>
             Analytics
             </AccordionHeader>
             <AccordionBody>
             <section
-                className="flex flex-wrap items-center font-sans mx-auto w-full pb-20 bg-slate-800" 
+                className="flex flex-wrap items-center font-sans mx-auto w-full pb-20 " 
                 >
                 <div className="w-full">
                     <Grid data={analData} title="Analytics" />
@@ -99,13 +106,13 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
                 }}>
         </section>
         {/* End Parallax Background  */}
-        <Accordion id="misc" open={openMenu === 4} icon={<Icon id={4} open={openMenu} />}>
-            <AccordionHeader className=" text-white text-3xl shadow-xl" onClick={() => handleOpen(4)}>
+        <Accordion id="misc" open={openMenu === 4} icon={<Icon id={4} open={openMenu} color={"orange"} />}>
+            <AccordionHeader className="from-blue-500 to-purple-300 bg-gradient-to-tr bg-fixed  text-transparent bg-clip-text text-3xl font-bold" onClick={() => handleOpen(4)}>
             Misc Tech
             </AccordionHeader>
             <AccordionBody>
             <section
-                className="flex flex-wrap items-center font-sans mx-auto w-full pb-20 bg-slate-800" 
+                className="flex flex-wrap items-center font-sans mx-auto w-full pb-20 " 
                 >
                 <div className="w-full">
                     <Grid data={miscData} title="Miscellaneous" />
