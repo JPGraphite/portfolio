@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import recentWorkData from './recent-work.json';
+import recentWorkData from '../data/recent-work.json';
 import Header from "./Header";
 import Grid from "./Grid";
 import TechAccordion from "./TechAccordion";

@@ -4,10 +4,10 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import feData from './front-end.json'
-import beData from './back-end.json'
-import analData from './analytics.json'
-import miscData from './misc-tech.json'
+import feData from '../data/front-end.json'
+import beData from '../data/back-end.json'
+import analData from '../data/analytics.json'
+import miscData from '../data/misc-tech.json'
 import Grid from "./Grid";
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { IconContext } from "react-icons";
