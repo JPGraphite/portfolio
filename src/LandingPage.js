@@ -245,9 +245,9 @@ function LandingPage() {
                 {/* Recent Work */}
                 <section
                     id="recent-work"
-                    className="flex flex-wrap items-center -mx-3 py-10 font-sans  mx-auto w-full px-6 sm:px-20 pb-20 bg-gradient-to-br from-slate-800 via-slate-800 to-blue-800 bg-slate-800" 
+                    className="flex flex-wrap items-center -mx-3 py-10 font-sans  mx-auto w-full px-6  pb-20 bg-gradient-to-br from-slate-800 via-slate-800 to-blue-800 bg-slate-800" 
                     >
-                    <h2 className="text-4xl leading-8 font-semibold mb-8 text-transparent bg-gradient-to-tr from-blue-300 to-purple-500 bg-clip-text text-start uppercase font-bold">
+                    <h2 className="text-4xl leading-8 px-6 mb-8 text-transparent bg-gradient-to-tr from-blue-300 to-purple-500 bg-clip-text text-start uppercase font-bold">
                         Previous Work
                     </h2>
                     <div className=" w-full">
@@ -290,11 +290,11 @@ function LandingPage() {
                                 </h2>
 
                                 <form className="p-4 flex flex-col gap-2">
-                                    <label className="text-blue-600 text-left" htmlFor="name">First name:</label>
+                                    <label className="text-blue-600 text-left text-2xl font-bold pt-2" htmlFor="name">First name:</label>
                                     <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="text" id="name" name="name"></input>
-                                    <label className="text-blue-600 text-left" htmlFor="email">Email:</label>
+                                    <label className="text-blue-600 text-left text-2xl font-bold pt-2" htmlFor="email">Email:</label>
                                     <input className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2" type="email" id="email" name="email"></input>
-                                    <label className="text-blue-600 text-left" htmlFor="message">Message:</label>
+                                    <label className="text-blue-600 text-left text-2xl font-bold pt-2" htmlFor="message">Message:</label>
                                     <textarea className="bg-slate-400 focus:border-none focus:outline-2 focus:outline-blue-400 outline-offset-2 h-64" type="textarea" id="message" name="message"></textarea>
                                     <button className="bg-blue-600 p-2 mt-4 mb-0" type="submit">Submit</button>
                                 </form>
