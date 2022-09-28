@@ -1,7 +1,7 @@
 const Grid = ({data}) => {
     const values = data;
     return (
-        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-10 align-middle justify-items-center items-center">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-10 align-middle justify-items-center items-center">
             {values.resources.map((resource, index) => {
             return (
               <li
@@ -21,7 +21,7 @@ const Grid = ({data}) => {
                   />
                 </a>
                 <div
-                  className="m-[6px] lg:m-[8px] aspect-square block absolute top-0 left-0 bottom-0 right-0 rounded-xl transition-opacity duration-300 opacity-50 lg:opacity-0 hover:opacity-100 bg-slate-800/75 z-10"
+                  className="m-[6px] lg:m-[8px] aspect-square block absolute top-0 left-0 bottom-0 right-0 rounded-xl transition-opacity duration-300 opacity-0 hover:opacity-100 bg-slate-800/75 z-10"
                 >
                     <div className="absolute bottom-2 md:bottom-10 text-center w-full left-0 flex justify-center">
                         <a href={resource.link ? resource.link : "#"} target="_blank" rel="noreferrer" className={`border-white border-2 rounded-full px-4  text-white hover:border-blue-400 hover:text-blue-400 transition-colors duration-300 ${resource.link ? "py-2" : "cursor-not-allowed md:py-2"}`}>{resource.link ? "VISIT SITE" : "In Development"}</a>
@@ -32,7 +32,7 @@ const Grid = ({data}) => {
                 </div>
                 
               </div>
-                
+              <a href={resource.link ? resource.link : "#"} className="text-white">{resource.title} {resource.link ? "" : "(In Development)"}</a>
               </li>
             );
           })}

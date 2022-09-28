@@ -125,6 +125,7 @@ function LandingPage() {
                 {/* End Parallax Background  */}
                 {/* Tech Section */}
                 <section id="tech" className="mx-auto w-full bg-gradient-to-br from-blue-800 via-slate-800 to-slate-800 px-6 ">
+                    <h2 className="text-white text-5xl py-4">Tech Skills</h2>
                     <TechAccordion openMenu={openMenu} setOpenMenu={handleOpenMenu} />
                 </section>
                 {/* End Tech Section */}               

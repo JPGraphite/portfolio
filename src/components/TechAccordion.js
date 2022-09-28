@@ -38,7 +38,7 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
     <Fragment>
         <Accordion className="" id="front-end" open={openMenu === 1} icon={<Icon className="" id={1} open={openMenu} color={"blue"}/> }>
             <AccordionHeader className="neon-noFlicker neon-purple font-normal uppercase text-4xl px-6 flex justify-between" onClick={() => handleOpen(1)}>
-                Front end Tech
+                Front-end
             </AccordionHeader>
             <AccordionBody className="overflow-x-visible">
             {/* Front End Carousel */}
@@ -62,7 +62,7 @@ export default function TechAccordion({openMenu, setOpenMenu}) {
         {/* End Parallax Background  */}
         <Accordion id="back-end" open={openMenu === 2} icon={<Icon id={2} open={openMenu} color={"hotpink"} />} >
             <AccordionHeader className="neon-green uppercase font-normal text-4xl px-6" onClick={() => handleOpen(2)}>
-            Back-End Tech
+            Back-End
             </AccordionHeader>
             <AccordionBody>
             {/* Back End Carousel */}
